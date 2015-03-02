@@ -79,12 +79,8 @@
 		56ECCFB01AA3D75F00A153C9 /* Calculator */ = {
 			isa = PBXGroup;
 			children = (
-				56ECCFB31AA3D75F00A153C9 /* AppDelegate.swift */,
 				56ECCFB81AA3D75F00A153C9 /* ViewController.swift */,
 				56ECCFBA1AA3D75F00A153C9 /* Main.storyboard */,
-				56ECCFBD1AA3D75F00A153C9 /* Images.xcassets */,
-				56ECCFBF1AA3D75F00A153C9 /* LaunchScreen.xib */,
-				56ECCFB51AA3D75F00A153C9 /* Calculator.xcdatamodeld */,
 				56ECCFB11AA3D75F00A153C9 /* Supporting Files */,
 			);
 			path = Calculator;
@@ -93,6 +89,10 @@
 		56ECCFB11AA3D75F00A153C9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				56ECCFBF1AA3D75F00A153C9 /* LaunchScreen.xib */,
+				56ECCFB31AA3D75F00A153C9 /* AppDelegate.swift */,
+				56ECCFBD1AA3D75F00A153C9 /* Images.xcassets */,
+				56ECCFB51AA3D75F00A153C9 /* Calculator.xcdatamodeld */,
 				56ECCFB21AA3D75F00A153C9 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -164,6 +164,7 @@
 				TargetAttributes = {
 					56ECCFAD1AA3D75F00A153C9 = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = 747UKB74QQ;
 					};
 					56ECCFC51AA3D76000A153C9 = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -340,9 +341,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Calculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -350,9 +355,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Calculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -409,6 +418,7 @@
 				56ECCFD21AA3D76000A153C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		56ECCFD31AA3D76000A153C9 /* Build configuration list for PBXNativeTarget "CalculatorTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +427,7 @@
 				56ECCFD51AA3D76000A153C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
