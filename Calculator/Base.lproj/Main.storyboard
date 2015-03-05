@@ -209,10 +209,6 @@
                                 <state key="normal" title="⬅︎">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <action selector="doDrop" destination="vXZ-lx-hvc" eventType="touchUpInside" id="r8q-6C-5FZ"/>
-                                    <action selector="operate:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ujT-8h-gJZ"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9vb-hf-uYd">
                                 <rect key="frame" x="248" y="469" width="104" height="123"/>

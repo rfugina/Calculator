@@ -26,16 +26,6 @@ class ViewController: UIViewController {
 
     }
 
-    @IBAction func doDrop() {
-        if operandStack.count >= 1 {
-            operandStack.removeLast()
-        }
-        if operandStack.count >= 1 {
-            displayValue = operandStack.last!
-        } else {
-            display.text = "0"
-        }
-    }
 
     @IBAction func operate(sender: UIButton) {
         let operation = sender.currentTitle!
