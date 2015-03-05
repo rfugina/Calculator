@@ -14,6 +14,7 @@
 		56ECCFBE1AA3D75F00A153C9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56ECCFBD1AA3D75F00A153C9 /* Images.xcassets */; };
 		56ECCFC11AA3D75F00A153C9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56ECCFBF1AA3D75F00A153C9 /* LaunchScreen.xib */; };
 		56ECCFCD1AA3D76000A153C9 /* CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56ECCFCC1AA3D76000A153C9 /* CalculatorTests.swift */; };
+		56FFBC441AA80B4E00EFBE8A /* CalculatorBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56FFBC431AA80B4E00EFBE8A /* CalculatorBrain.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		56ECCFC61AA3D76000A153C9 /* CalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalculatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		56ECCFCB1AA3D76000A153C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		56ECCFCC1AA3D76000A153C9 /* CalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorTests.swift; sourceTree = "<group>"; };
+		56FFBC431AA80B4E00EFBE8A /* CalculatorBrain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorBrain.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 			children = (
 				56ECCFB81AA3D75F00A153C9 /* ViewController.swift */,
 				56ECCFBA1AA3D75F00A153C9 /* Main.storyboard */,
+				56FFBC431AA80B4E00EFBE8A /* CalculatorBrain.swift */,
 				56ECCFB11AA3D75F00A153C9 /* Supporting Files */,
 			);
 			path = Calculator;
@@ -218,6 +221,7 @@
 			files = (
 				56ECCFB91AA3D75F00A153C9 /* ViewController.swift in Sources */,
 				56ECCFB41AA3D75F00A153C9 /* AppDelegate.swift in Sources */,
+				56FFBC441AA80B4E00EFBE8A /* CalculatorBrain.swift in Sources */,
 				56ECCFB71AA3D75F00A153C9 /* Calculator.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
