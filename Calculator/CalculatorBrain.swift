@@ -40,9 +40,9 @@ class CalculatorBrain
         }
 
         learnOp(Op.BinaryOperation("×", *))
-        learnOp(Op.BinaryOperation("÷", { $1 * $0 }))
+        learnOp(Op.BinaryOperation("÷", { $1 / $0 }))
         learnOp(Op.BinaryOperation("+", +))
-        learnOp(Op.BinaryOperation("−", { $1 * $0 }))
+        learnOp(Op.BinaryOperation("−", { $1 - $0 }))
         learnOp(Op.UnaryOperation("√", sqrt))
     }
 
