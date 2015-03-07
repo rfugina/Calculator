@@ -11,8 +11,10 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var display: UILabel!
+    @IBOutlet weak var opLog: UILabel!
 
-    var inNumberEntry: Bool = false
+    var inNumberEntry = false
+    var alreadyHasDecimal = false
 
     var brain = CalculatorBrain()
 
@@ -28,8 +30,19 @@ class ViewController: UIViewController {
 
     }
 
+    @IBAction func decimalPoint() {
+        if !alreadyHasDecimal {
+            alreadyHasDecimal = true
+            if inNumberEntry {
+                display.text = display.text! + "."
+            } else {
+                display.text = "0."
+                inNumberEntry = true
+            }
+        }
+    }
+
     @IBAction func operate(sender: UIButton) {
-        let operation = sender.currentTitle!
         if inNumberEntry {
             enter()
         }
@@ -49,6 +62,13 @@ class ViewController: UIViewController {
         } else {
             displayValue = 0
         }
+    }
+
+    @IBAction func clear() {
+        inNumberEntry = false
+        alreadyHasDecimal = false
+        displayValue = 0
+        brain.clear()
     }
 
     var displayValue: Double {
